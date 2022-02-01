@@ -1,0 +1,202 @@
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+form,
+fieldset,
+input,
+textarea,
+p,
+blockquote,
+th,
+td {
+  padding: 0;
+  margin: 0;
+}
+a {
+  text-decoration: none;
+}
+table {
+  border-spacing: 0;
+}
+fieldset,
+img {
+  border: 0;
+}
+address,
+caption,
+cite,
+code,
+dfn,
+em,
+strong,
+th,
+var {
+  font-weight: normal;
+  font-style: normal;
+}
+strong {
+  font-weight: bold;
+}
+ol,
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+caption,
+th {
+  text-align: left;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+  font-size: 100%;
+  margin: 0;
+  padding: 0;
+  color: #444;
+}
+q:before,
+q:after {
+  content: "";
+}
+abbr,
+acronym {
+  border: 0;
+}
+
+/* Custom CSS
+  * --------------------------------------- */
+body {
+  font-family: arial, helvetica;
+  color: #101010;
+}
+.wrap {
+  margin-left: auto;
+  margin-right: auto;
+  width: 960px;
+  position: relative;
+}
+h1 {
+  font-size: 5em;
+  text-shadow: 0 2px 5px #000000;
+}
+p {
+  font-size: 2em;
+}
+.intro p {
+  width: 50%;
+  margin: 0 auto;
+  font-size: 1.5em;
+}
+.section {
+  text-align: center;
+  overflow: hidden;
+}
+#menu li {
+  display: inline-block;
+  margin: 10px;
+  color: #101010;
+  background: rgba(255, 255, 255, 0.4);
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  transition: all 0.4s linear;
+}
+#menu li.active {
+  background: #101010b6;
+  color: #fff;
+  transform: rotateZ(13deg) scale(0.9) translateY(10px);
+  box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.521);
+}
+#menu li a {
+  text-decoration: none;
+  color: #101010;
+}
+#menu li a,
+#menu li.active a {
+  padding: 9px 18px;
+  display: block;
+}
+#menu li.active a {
+  color: #fff;
+}
+#menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 40px;
+  z-index: 70;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+/* custom  */
+button.moveSecbtn{
+  background: none;
+  border: 2px solid #101010;
+  color: #101010;
+  width: 40px !important;
+  height: 40px;
+  font-size: 18px;
+  position: relative;
+  top: 15px; 
+  padding: 0;
+  overflow: hidden;
+  border-radius: 50%;
+  transition: all 0.4s linear;
+  transform-origin: top;
+  box-shadow: inset 0 0 1px rgb(31, 31, 31);
+}
+button.moveSecbtn:hover{
+  transform: scale(1.2);
+  box-shadow: inset 0 0 10px rgb(29, 29, 29);
+}
+button.moveSecbtn i{
+  transition: all 0.4s linear;
+  line-height: 40px;
+}
+button.moveSecbtn:hover i{
+  transform: rotateY(180deg);
+}
+.fp-tooltip.fp-right {
+  color: rgb(37, 37, 37) !important;
+}
+.fp-tableCell{
+  transition: all 0.3s linear;
+}
+#fp-nav ul li a.active span {
+  transform: translate(-50%, -50%) rotateZ(45deg);
+  border-radius: 0;
+  margin: 0 !important;
+  transition: all 0.4s linear;
+  border: 2px solid #fff;
+
+}
+#fp-nav ul li {
+  height: 14px;
+  margin: 6px;
+}
+#fp-nav ul li a span {
+  transform: rotateZ(45deg);
+  
+  border-radius: 0;
+}
+#fp-nav ul li:hover a.active span {
+  border-radius: 0;
+}
